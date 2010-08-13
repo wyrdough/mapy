@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Ajzele
+ * @package     Ajzele_Mapy
+ * @copyright   Copyright (c) Branko Ajzele (http://activecodeline.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <api>
+        <resources>
+            <customer translate="title" module="customer">
+                <model>customer/customer_api</model>
+                <title>Customer Api</title>
+                <acl>customer</acl>
+                <methods></methods>
+            </customer>
+            <customer_group>
+                <model>customer/group_api</model>
+                <title>Customer's Groups Api</title>
+                <acl>customer</acl>
+                <methods></methods>
+            </customer_group>
+            <customer_address>
+                <model>customer/address_api</model>
+                <title>Customer Address Api</title>
+                <acl>customer/address</acl>
+                <methods></methods>
+            </customer_address>
+            <directory_country translate="title" module="directory">
+                <model>directory/country_api</model>
+                <title>Country Api</title>
+                <acl>directory/country</acl>
+                <methods></methods>
+            </directory_country>
+            <directory_region translate="title" module="directory">
+                <model>directory/region_api</model>
+                <title>Region Api</title>
+                <acl>directory/region</acl>
+                <methods></methods>
+            </directory_region>            
+            <catalog_category translate="title" module="catalog">
+                <model>catalog/category_api</model>
+                <title>Category API</title>
+                <acl>catalog/category</acl>
+                <methods></methods>
+            </catalog_category>
+            
+            <catalog_category_attribute translate="title" module="catalog">
+                <title>Category attributes API</title>
+                <model>catalog/category_attribute_api</model>
+                <acl>catalog/category</acl>
+                <methods></methods>
+            </catalog_category_attribute>
+
+
+            <catalog_product translate="title" module="catalog">
+                <title>Product API</title>
+                <model>catalog/product_api</model>
+                <acl>catalog/product</acl>
+                <methods></methods>
+            </catalog_product>
+            
+            <catalog_product_attribute translate="title" module="catalog">
+                <title>Product attributes API</title>
+                <model>catalog/product_attribute_api</model>
+                <acl>catalog/product</acl>
+                <methods></methods>
+            </catalog_product_attribute>
+
+            <catalog_product_attribute_set translate="title" module="catalog">
+                <title>Product attribute sets API</title>
+                <model>catalog/product_attribute_set_api</model>
+                <acl>catalog/product</acl>
+                <methods></methods>
+            </catalog_product_attribute_set>
+
+
+            <catalog_product_type translate="title" module="catalog">
+                <title>Product types API</title>
+                <model>catalog/product_type_api</model>
+                <acl>catalog/product</acl>
+                <methods></methods>
+            </catalog_product_type>
+
+            <catalog_product_attribute_media translate="title" module="catalog">
+                <title>Product Images API</title>
+                <model>catalog/product_attribute_media_api</model>
+                <acl>catalog/product/media</acl>
+                <methods></methods>
+            </catalog_product_attribute_media>
+            
+            <catalog_product_attribute_tier_price translate="title" module="catalog">
+                <title>Product Tier Price API</title>
+                <model>catalog/product_attribute_tierprice_api</model>
+                <acl>catalog/product</acl>
+                <methods></methods>
+            </catalog_product_attribute_tier_price>
+            
+            <catalog_product_link translate="title" module="catalog">
+                <title>Product links API (related, cross sells, up sells)</title>
+                <model>catalog/product_link_api</model>
+                <acl>catalog/product/link</acl>
+                <methods></methods>
+            </catalog_product_link>            
+        </resources>
+        <acl>
+            <resources>
+                <customer translate="title" module="customer">
+                     <title>Customers</title>
+                     <sort_order>3</sort_order>
+                </customer>
+                <directory translate="title" module="directory">
+                    <title>Directory</title>
+                    <sort_order>5</sort_order>
+                </directory>    
+                <catalog translate="title" module="catalog">
+                    <title>Catalog</title>
+                    <sort_order>1</sort_order>
+                </catalog>                
+            </resources>
+        </acl>
+    </api>
+</config>

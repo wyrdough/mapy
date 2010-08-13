@@ -1,0 +1,389 @@
+﻿Original Magento API resources:
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Customer_Customer_Api
+
+Customer API
+Resource Name: customer
+
+Methods:
+
+customer.list - Retrieve customers
+customer.create - Create customer
+customer.info - Retrieve customer data
+customer.update - Update customer data (will not update password!)
+customer.delete - Delete customer
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Customer_Group_Api
+
+Customer's Groups API
+Resource Name: customer_group
+
+Methods:
+
+customer_group.list - Retrieve customer’s groups
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Customer_Address_Api
+
+Customer Address API
+Resource Name: customer_address
+
+Methods:
+
+customer_address.list - Retrieve customer addresses
+customer_address.create - Create customer address
+customer_address.info - Retrieve customer address
+customer_address.update - Update customer address
+customer_address.delete - Delete customer address
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Directory_Country_Api
+
+Mage_Directory
+
+Allows to retrieve countries and regions from magento.
+
+API resources:
+
+Country API
+Resource Name: directory_country
+
+Aliases:
+
+country
+Methods:
+
+directory_country.list - List of countries
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Directory_Region_Api
+
+Region API
+Resource Name: directory_region
+
+Aliases:
+
+region
+Methods:
+
+directory_region.list - List of regions in specified country
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Category_Api
+
+Mage_Catalog
+... Allows to export/import categories and products from/into Magento ...
+
+API resources:
+
+Category API
+Resource Name: catalog_category
+
+Aliases:
+
+category
+Methods:
+
+catalog_category.currentStore - Set/Get current store view
+catalog_category.tree - Retrieve hierarchical tree
+catalog_category.level - Retrieve one level of categories by website/store view/parent category
+catalog_category.info - Retrieve category data
+catalog_category.create - Create new category
+catalog_category.update - Update category
+catalog_category.move - Move category in tree
+catalog_category.delete - Delete category
+catalog_category.assignedProducts - Retrieve list of assigned products
+catalog_category.assignProduct - Assign product to category
+catalog_category.updateProduct - Update assigned product
+catalog_category.removeProduct - Remove product assignment
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Category_Attribute_Api
+
+Category attributes API
+Resource Name: catalog_category_attribute
+
+Aliases:
+
+category_attribute
+Methods:
+
+catalog_category_attribute.currentStore - Set/Get current store view
+catalog_category_attribute.list - Retrieve category attributes
+catalog_category_attribute.options - Retrieve attribute options
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Product_Api
+
+Product API
+Resource Name: catalog_product
+
+Aliases:
+
+product
+Methods:
+
+catalog_product.currentStore - Set/Get current store view
+catalog_product.list - Retrieve products list by filters
+catalog_product.info - Retrieve product
+catalog_product.create - Create new product
+catalog_product.update - Update product
+catalog_product.setSpecialPrice - Set special price for product
+catalog_product.getSpecialPrice - Get special price for product
+catalog_product.delete - Delete product
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Product_Attribute_Api
+
+Product attributes API
+Resource Name: catalog_product_attribute
+
+Aliases:
+
+product_attribute
+Methods:
+
+catalog_product_attribute.currentStore - Set/Get current store view
+catalog_product_attribute.list - Retrieve attribute list
+catalog_product_attribute.options - Retrieve attribute options
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Product_Attribute_Set_Api
+
+Product attribute sets API
+Resource Name: catalog_product_attribute_set
+
+Aliases:
+
+product_attribute_set
+Methods:
+
+catalog_product_attribute_set.list - Retrieve product attribute sets
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Product_Type_Api
+
+Product types API
+Resource Name: catalog_product_type
+
+Aliases:
+
+product_type
+Methods:
+
+catalog_product_type.list - Retrieve product types
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Product_Attribute_Media_Api
+
+Product Images API
+Resource Name: catalog_product_attribute_media
+
+Aliases:
+
+product_attribute_media
+product_media
+Methods:
+
+catalog_product_attribute_media.currentStore - Set/Get current store view
+catalog_product_attribute_media.list - Retrieve product image list
+catalog_product_attribute_media.info - Retrieve product image
+catalog_product_attribute_media.types - Retrieve product image types
+catalog_product_attribute_media.create - Upload new product image
+catalog_product_attribute_media.update - Update product image
+catalog_product_attribute_media.remove - Remove product image
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Product_Attribute_Tierprice_Api
+
+Product Tier Price API
+Resource Name: catalog_product_attribute_tier_price
+
+Aliases:
+
+product_attribute_tier_price
+product_tier_price
+Methods:
+
+catalog_product_attribute_tier_price.info - Retrieve product tier prices
+catalog_product_attribute_tier_price.update - Update product tier prices
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Catalog_Product_Link_Api
+
+Product links API (related, cross sells, up sells, grouped)
+Resource Name: catalog_product_link
+
+Aliases:
+
+product_link
+Methods:
+
+catalog_product_link.list - Retrieve linked products
+catalog_product_link.assign - Assign product link
+catalog_product_link.update - Update product link
+catalog_product_link.remove - Remove product link
+catalog_product_link.types - Retrieve product link types
+catalog_product_link.attributes - Retrieve product link type attributes
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Sales_Order_Api
+
+Mage_Sales
+... Allows to export/import sales orders from/into Magento, to create invoices, shipments, credit memos ...
+
+Order API
+Resource Name: sales_order
+
+Aliases:
+
+order
+Methods:
+
+sales_order.list - Retrieve list of orders by filters
+sales_order.info - Retrieve order information
+sales_order.addComment - Add comment to order
+sales_order.hold - Hold order
+sales_order.unhold - Unhold order
+sales_order.cancel - Cancel order
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Sales_Order_Shipment_Api
+
+Shipment API
+Resource Name: sales_order_shipment
+
+Aliases:
+
+order_shipment
+Methods:
+
+sales_order_shipment.list - Retrieve list of shipments by filters
+sales_order_shipment.info - Retrieve shipment information
+sales_order_shipment.create - Create new shipment for order
+sales_order_shipment.addComment - Add new comment to shipment
+sales_order_shipment.addTrack - Add new tracking number
+sales_order_shipment.removeTrack - Remove tracking number
+sales_order_shipment.getCarriers - Retrieve list of allowed carriers for order
+====================================================================
+
+
+
+
+
+====================================================================
+Ajzele_Mapy extension REWRITE TESTED - Ajzele_Mapy_Model_Sales_Order_Invoice_Api
+
+Invoice API
+Resource Name: sales_order_invoice
+
+Aliases:
+
+order_invoice
+Methods:
+
+sales_order_invoice.list - Retrieve list of invoices by filters
+sales_order_invoice.info - Retrieve invoice information
+sales_order_invoice.create - Create new invoice for order
+sales_order_invoice.addComment - Add new comment to shipment
+sales_order_invoice.capture - Capture invoice
+sales_order_invoice.void - Void invoice
+sales_order_invoice.cancel - Cancel invoice
+====================================================================
+
+
+
+
+
+====================================================================
+Mage_CatalogInventory
+... Allows to update stock attributes (status, quantity) ...
+
+Inventory API
+Resource Name: cataloginventory_stock_item
+
+Aliases:
+
+product_stock
+Methods:
+
+cataloginventory_stock_item.list - Retrieve stock data by product ids
+cataloginventory_stock_item.update - Update product stock data
+====================================================================
