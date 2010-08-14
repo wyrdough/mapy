@@ -152,10 +152,4 @@ class Ajzele_Mapy_Model_Mapy_Core_Api extends Mage_Api_Model_Resource_Abstract
     {
     	return Mage::getIsDeveloperMode();
     }
-	
-	public function test()
-	{
-		return Mage::getEvents();
-	}
-	
 }
