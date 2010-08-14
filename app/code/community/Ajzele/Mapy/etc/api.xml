@@ -10,6 +10,71 @@
 <config>
     <api>
         <resources>
+        
+            <mapy_core translate="title" module="customer">
+                <model>mapy/mapy_core_api</model>
+                <title>Mapy Core Api</title>
+                <acl>mapy/core</acl>
+                <methods>
+                
+                    <currentVersion translate="title" module="customer">
+                        <title>Retrieve current version</title>
+                        <method>currentVersion</method>
+                        <acl>mapy/core/currentVersion</acl>
+                    </currentVersion>              
+                
+                    <currentZendVersion translate="title" module="customer">
+                        <title>Retrieve current Zend Framework version</title>
+                        <method>currentZendVersion</method>
+                        <acl>mapy/core/currentZendVersion</acl>
+                    </currentZendVersion>
+                    
+                    <getUrl translate="title" module="customer">
+                        <title>Generate url by route and parameters - Mage::getUrl</title>
+                        <method>getUrl</method>
+                        <acl>mapy/core/getUrl</acl>
+                    </getUrl>     
+                    
+                    <getWebsites translate="title" module="customer">
+                        <title>Retrieve info array of all existing websites</title>
+                        <method>getWebsites</method>
+                        <acl>mapy/core/getWebsites</acl>
+                    </getWebsites>    
+                    
+                    
+                    <getStores translate="title" module="customer">
+                        <title>Retrieve info array of all existing stores</title>
+                        <method>getStores</method>
+                        <acl>mapy/core/getStores</acl>
+                    </getStores>                                                         
+
+                    <getStoreConfig translate="title" module="customer">
+                        <title>Get specific store config</title>
+                        <method>getStoreConfig</method>
+                        <acl>mapy/core/getStoreConfig</acl>
+                    </getStoreConfig>          
+
+
+                    <getIsDeveloperMode translate="title" module="customer">
+                        <title>Retrieve enabled developer mode</title>
+                        <method>getIsDeveloperMode</method>
+                        <acl>mapy/core/getIsDeveloperMode</acl>
+                    </getIsDeveloperMode> 
+
+
+
+
+
+                    <test translate="title" module="customer">
+                        <title>Blank test method</title>
+                        <method>test</method>
+                        <acl>mapy/core/test</acl>
+                    </test>
+                    
+                </methods>
+            </mapy_core>
+        
+        
             <customer translate="title" module="customer">
                 <model>customer/customer_api</model>
                 <title>Customer Api</title>
@@ -107,6 +172,76 @@
         </resources>
         <acl>
             <resources>
+
+            
+            
+            
+                <mapy translate="title" module="customer">
+                     <title>Mapy</title>
+                     <sort_order>43</sort_order>
+                     
+                     <core translate="title" module="customer">
+                         <title>Core</title>
+                         <sort_order>100</sort_order>
+                         
+                         <currentVersion translate="title" module="customer">
+                            <title>Retrieve current version</title>
+                         </currentVersion>                         
+                         
+                         <currentZendVersion translate="title" module="customer">
+                            <title>Retrieve current Zend Framework version</title>
+                         </currentZendVersion>
+                         
+                         <getUrl translate="title" module="customer">
+                            <title>Generate url by route and parameters, Mage::getUrl</title>
+                         </getUrl>                             
+
+                         <getWebsites translate="title" module="customer">
+                            <title>Retrieve info array of all existing websites</title>
+                         </getWebsites>    
+
+                         <getStores translate="title" module="customer">
+                            <title>Retrieve info array of all existing stores</title>
+                         </getStores>  
+
+                         <getStoreConfig translate="title" module="customer">
+                            <title>Get specific store config</title>
+                         </getStoreConfig>
+
+                         <getIsDeveloperMode translate="title" module="customer">
+                            <title>Retrieve enabled developer mode</title>
+                         </getIsDeveloperMode>
+
+
+
+                         <test translate="title" module="customer">
+                            <title>Blank test method</title>
+                         </test>  
+
+                           
+                         
+                         
+                     </core>
+                </mapy>            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
                 <customer translate="title" module="customer">
                      <title>Customers</title>
                      <sort_order>3</sort_order>

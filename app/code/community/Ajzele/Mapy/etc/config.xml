@@ -15,6 +15,11 @@
 	</modules>
 	<global>
 		<models>
+		
+			<mapy>
+				<class>Ajzele_Mapy_Model</class>
+			</mapy>
+		
 			<customer>
 				<rewrite>
 					<customer_api>Ajzele_Mapy_Model_Customer_Customer_Api</customer_api>
