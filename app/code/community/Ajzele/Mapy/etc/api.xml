@@ -61,7 +61,11 @@
                         <acl>mapy/core/getIsDeveloperMode</acl>
                     </getIsDeveloperMode> 
 
-
+                    <log translate="title" module="customer">
+                        <title>Mage log</title>
+                        <method>log</method>
+                        <acl>mapy/core/log</acl>
+                    </log> 
 
 
 
@@ -70,9 +74,219 @@
                         <method>test</method>
                         <acl>mapy/core/test</acl>
                     </test>
-                    
                 </methods>
             </mapy_core>
+            
+            <mapy_core_website translate="title" module="customer">
+                <model>mapy/mapy_core_website_api</model>
+                <title>Mapy Core Website Api</title>
+                <acl>mapy/core_website</acl>
+                <methods>
+                    <getStoreCodes translate="title" module="customer">
+                        <title>Get store codes</title>
+                        <method>getStoreCodes</method>
+                        <acl>mapy/core_website/getStoreCodes</acl>
+                    </getStoreCodes>    
+                    
+                    <getMageCoreModelWebsiteDebug translate="title" module="customer">
+                        <title>getMageCoreModelWebsiteAsArray, basically it returns toArray() of a model object</title>
+                        <method>getMageCoreModelWebsiteDebug</method>
+                        <acl>mapy/core_website/getMageCoreModelWebsiteDebug</acl>
+                    </getMageCoreModelWebsiteDebug>                      
+                    
+                    
+                    <getBaseCurrency translate="title" module="customer">
+                        <title>Retrieve website base currency</title>
+                        <method>getBaseCurrency</method>
+                        <acl>mapy/core_website/getBaseCurrency</acl>
+                    </getBaseCurrency>       
+                    
+                    <getCollection translate="title" module="customer">
+                        <title>Get collection of all websites</title>
+                        <method>getCollection</method>
+                        <acl>mapy/core_website/getCollection</acl>
+                    </getCollection>                       
+                                 
+                                 
+                    <isCanDelete translate="title" module="customer">
+                        <title>Check if website can be deleted</title>
+                        <method>isCanDelete</method>
+                        <acl>mapy/core_website/isCanDelete</acl>
+                    </isCanDelete>                                  
+                                 
+                    <getConfig translate="title" module="customer">
+                        <title>Get config by specified string path</title>
+                        <method>getConfig</method>
+                        <acl>mapy/core_website/getConfig</acl>
+                    </getConfig>          
+                    
+                    <getStores translate="title" module="customer">
+                        <title>Get stores for given website</title>
+                        <method>getStores</method>
+                        <acl>mapy/core_website/getStores</acl>
+                    </getStores>  
+                    
+                    <create translate="title" module="customer">
+                        <title>Create new website</title>
+                        <method>create</method>
+                        <acl>mapy/core_website/create</acl>
+                    </create>   
+                    
+                    <delete translate="title" module="customer">
+                        <title>Delete website</title>
+                        <method>delete</method>
+                        <acl>mapy/core_website/delete</acl>
+                    </delete>                
+                    
+                    <update translate="title" module="customer">
+                        <title>Update website</title>
+                        <method>update</method>
+                        <acl>mapy/core_website/update</acl>
+                    </update>                     
+                                                     
+                                                   
+                </methods>            	
+            </mapy_core_website>
+        
+        
+        
+            <mapy_core_store translate="title" module="customer">
+                <model>mapy/mapy_core_store_api</model>
+                <title>Mapy Core Store Api</title>
+                <acl>mapy/core_store</acl>
+                <methods>
+                
+                    <getMageCoreModelStoreAsArray translate="title" module="customer">
+                        <title>getMageCoreModelStoreAsArray, basically it returns toArray() of a model object</title>
+                        <method>getMageCoreModelStoreAsArray</method>
+                        <acl>mapy/core_store/getMageCoreModelStoreAsArray</acl>
+                    </getMageCoreModelStoreAsArray>    
+
+                    <getCurrentCurrency translate="title" module="customer">
+                        <title>Get current store currency</title>
+                        <method>getCurrentCurrency</method>
+                        <acl>mapy/core_store/getCurrentCurrency</acl>
+                    </getCurrentCurrency> 
+                    
+                    <getBaseCurrency translate="title" module="customer">
+                        <title>Get base store currency</title>
+                        <method>getBaseCurrency</method>
+                        <acl>mapy/core_store/getBaseCurrency</acl>
+                    </getBaseCurrency>        
+                    
+                    <getAvailableCurrencyCodes translate="title" module="customer">
+                        <title>Get available currency codes</title>
+                        <method>getAvailableCurrencyCodes</method>
+                        <acl>mapy/core_store/getAvailableCurrencyCodes</acl>
+                    </getAvailableCurrencyCodes>                       
+                                 
+                                 
+                    <getConfig translate="title" module="customer">
+                        <title>Get config by path</title>
+                        <method>getConfig</method>
+                        <acl>mapy/core_store/getConfig</acl>
+                    </getConfig>                                  
+                    
+                    <formatPrice translate="title" module="customer">
+                        <title>Get formated price with currency filter (taking rate into consideration)</title>
+                        <method>formatPrice</method>
+                        <acl>mapy/core_store/formatPrice</acl>
+                    </formatPrice>          
+                    
+                    <getRootCategoryId translate="title" module="customer">
+                        <title>Get root category id</title>
+                        <method>getRootCategoryId</method>
+                        <acl>mapy/core_store/getRootCategoryId</acl>
+                    </getRootCategoryId>           
+                    
+                    <create translate="title" module="customer">
+                        <title>Create new store</title>
+                        <method>create</method>
+                        <acl>mapy/core_store/create</acl>
+                    </create>   
+                    
+                    <delete translate="title" module="customer">
+                        <title>Delete store</title>
+                        <method>delete</method>
+                        <acl>mapy/core_store/delete</acl>
+                    </delete>                
+                    
+                    <update translate="title" module="customer">
+                        <title>Update store</title>
+                        <method>update</method>
+                        <acl>mapy/core_store/update</acl>
+                    </update>  
+                    
+                    <isCanDelete translate="title" module="customer">
+                        <title>Check isCanDelete</title>
+                        <method>isCanDelete</method>
+                        <acl>mapy/core_store/isCanDelete</acl>
+                    </isCanDelete>                                                                      
+                               
+                                                   
+                </methods>            	
+            </mapy_core_store>        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <mapy_core_store_group translate="title" module="customer">
+                <model>mapy/mapy_core_store_group_api</model>
+                <title>Mapy Core Store Group Api</title>
+                <acl>mapy/core_store_group</acl>
+                <methods>
+                
+                    <getMageCoreModelStoreGroupAsArray translate="title" module="customer">
+                        <title>getMageCoreModelStoreGroupAsArray, basically it returns toArray() of a model object</title>
+                        <method>getMageCoreModelStoreGroupAsArray</method>
+                        <acl>mapy/core_store_group/getMageCoreModelStoreGroupAsArray</acl>
+                    </getMageCoreModelStoreGroupAsArray>    
+                    
+                    <create translate="title" module="customer">
+                        <title>Create new store group</title>
+                        <method>create</method>
+                        <acl>mapy/core_store_group/create</acl>
+                    </create>                                
+                               
+                    <getStores translate="title" module="customer">
+                        <title>Get list of stores in the group</title>
+                        <method>getStores</method>
+                        <acl>mapy/core_store_group/getStores</acl>
+                    </getStores>      
+                    
+                    <delete translate="title" module="customer">
+                        <title>Delete store group</title>
+                        <method>delete</method>
+                        <acl>mapy/core_store_group/delete</acl>
+                    </delete>                
+                    
+                    <update translate="title" module="customer">
+                        <title>Update store group</title>
+                        <method>update</method>
+                        <acl>mapy/core_store_group/update</acl>
+                    </update>        
+                    
+                    <isCanDelete translate="title" module="customer">
+                        <title>Check isCanDelete</title>
+                        <method>isCanDelete</method>
+                        <acl>mapy/core_store_group/isCanDelete</acl>
+                    </isCanDelete>                                                                      
+                                                   
+                </methods>            	
+            </mapy_core_store_group>         
+        
+        
+        
+        
+        
+        
+        
         
         
             <customer translate="title" module="customer">
@@ -212,35 +426,158 @@
                             <title>Retrieve enabled developer mode</title>
                          </getIsDeveloperMode>
 
-
-
-                         <test translate="title" module="customer">
-                            <title>Blank test method</title>
-                         </test>  
-
-                           
-                         
-                         
+                         <log translate="title" module="customer">
+                            <title>Mage log</title>
+                         </log>
                      </core>
+                     
+
+                     <core_website translate="title" module="customer">
+                         <title>Core Website</title>
+                         <sort_order>110</sort_order>   
+                                           
+                         <getStoreCodes translate="title" module="customer">
+                            <title>Get store codes</title>
+                         </getStoreCodes>  
+                         
+                         <getMageCoreModelWebsiteDebug translate="title" module="customer">
+                            <title>getMageCoreModelWebsiteAsArray, basically it returns toArray() of a model object</title>
+                         </getMageCoreModelWebsiteDebug>  
+                         
+                         <getBaseCurrency translate="title" module="customer">
+                            <title>Retrieve website base currency</title>
+                         </getBaseCurrency>   
+                         
+                         <getCollection translate="title" module="customer">
+                            <title>Get collection of all websites</title>
+                         </getCollection>      
+                         
+                         <isCanDelete translate="title" module="customer">
+                            <title>Check if website can be deleted</title>
+                         </isCanDelete>     
+                         
+                         <getConfig translate="title" module="customer">
+                            <title>Get config by specified string path</title>
+                         </getConfig>       
+                         
+                         
+                         <getStores translate="title" module="customer">
+                            <title>Get stores for given website</title>
+                         </getStores>           
+                         
+                         
+                         <create translate="title" module="customer">
+							<title>Create new website</title>
+                         </create> 		                                          
+                                          
+                         <delete translate="title" module="customer">
+							<title>Delete website</title>
+                         </delete> 	  
+                                                
+                         <update translate="title" module="customer">
+							<title>Update website</title>
+                         </update>                          
+                         
+                                           
+                     </core_website>
+                     
+                     
+                     
+                     
+                     
+                     
+                     <core_store translate="title" module="customer">
+                         <title>Core Store</title>
+                         <sort_order>111</sort_order>   
+                                           
+                         <getMageCoreModelStoreAsArray translate="title" module="customer">
+							<title>getMageCoreModelStoreAsArray, basically it returns toArray() of a model object</title>
+                         </getMageCoreModelStoreAsArray>  
+                         
+                         <getCurrentCurrency translate="title" module="customer">
+							<title>Get current store currency</title>
+                         </getCurrentCurrency>       
+                         
+                         <getBaseCurrency translate="title" module="customer">
+							<title>Get base store currency</title>
+                         </getBaseCurrency>                         
+                                      
+                         <getAvailableCurrencyCodes translate="title" module="customer">
+							<title>Get available currency codes</title>
+                         </getAvailableCurrencyCodes>                                       
+                                  
+                         <getConfig translate="title" module="customer">
+							<title>Get config by path</title>
+                         </getConfig>                                        
+
+                         <formatPrice translate="title" module="customer">
+							<title>Get formated price with currency filter (taking rate into consideration)</title>
+                         </formatPrice> 
+                                                     
+                         <getRootCategoryId translate="title" module="customer">
+							<title>Get root category id</title>
+                         </getRootCategoryId> 						                                                     
+                                          
+                         <create translate="title" module="customer">
+							<title>Create new store</title>
+                         </create> 		                                          
+                                          
+                         <delete translate="title" module="customer">
+							<title>Delete store</title>
+                         </delete> 	  
+                                                
+                         <update translate="title" module="customer">
+							<title>Update store</title>
+                         </update> 	  
+                         
+                         <isCanDelete translate="title" module="customer">
+							<title>Check isCanDelete</title>
+                         </isCanDelete>                                                                  
+                                                     
+                                                     
+                     </core_store>                     
+                     
+                     
+
+
+                     <core_store_group translate="title" module="customer">
+                         <title>Core Store Group</title>
+                         <sort_order>112</sort_order>   
+                                           
+                         <getMageCoreModelStoreGroupAsArray translate="title" module="customer">
+							<title>getMageCoreModelStoreGroupAsArray, basically it returns toArray() of a model object</title>
+                         </getMageCoreModelStoreGroupAsArray>  
+                                          
+                         <create translate="title" module="customer">
+							<title>Create new group (aka store)</title>
+                         </create> 		  
+                         
+                         
+                         <getStores translate="title" module="customer">
+							<title>Get list of stores in the group</title>
+                         </getStores> 	  
+                         
+
+                         <delete translate="title" module="customer">
+							<title>Delete store group</title>
+                         </delete> 	  
+                                                
+                         <update translate="title" module="customer">
+							<title>Update store group</title>
+                         </update> 	 
+                         
+                         <isCanDelete translate="title" module="customer">
+							<title>Check isCanDelete</title>
+                         </isCanDelete> 	                                      
+                         
+                                       
+                                                                 
+                     </core_store_group>                      
+                     
+                     
+                     
+                     
                 </mapy>            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
                 <customer translate="title" module="customer">
                      <title>Customers</title>

@@ -8,6 +8,8 @@
 
 /**
  * Mapy Core Api
+ * 
+ * Sort of exposing or serving as API version of app/Mage.php file
  *
  * @category   Ajzele
  * @package    Ajzele_Mapy
@@ -151,5 +153,27 @@ class Ajzele_Mapy_Model_Mapy_Core_Api extends Mage_Api_Model_Resource_Abstract
     public function getIsDeveloperMode()
     {
     	return Mage::getIsDeveloperMode();
+    }
+    
+    
+    /**
+     * Mage log facility
+     *
+     * @param string $message
+     * @param integer $level
+     * @param string $file
+     * @param bool $forceLog
+     * @return string Returns string, 'true' if OK, or exception message if exception
+     */
+	public function log($message, $level = null, $file = '', $forceLog = false)
+    {
+    	try {
+    		Mage::log($message, $level, $file, $forceLog);
+    		return 'true';	
+    	}
+    	catch (Exception $e) {
+    		return $e->getMessage();
+    	}
+		
     }
 }

@@ -65,5 +65,12 @@
 				</rewrite>
 			</sales>
 		</models>
+	
+		<helpers>
+			<mapy>
+				<class>Ajzele_Mapy_Helper</class>
+			</mapy>
+		</helpers>
+	
 	</global>
 </config>
