@@ -76,7 +76,6 @@
                     </test>
                 </methods>
             </mapy_core>
-            
             <mapy_core_website translate="title" module="customer">
                 <model>mapy/mapy_core_website_api</model>
                 <title>Mapy Core Website Api</title>
@@ -147,9 +146,6 @@
                                                    
                 </methods>            	
             </mapy_core_website>
-        
-        
-        
             <mapy_core_store translate="title" module="customer">
                 <model>mapy/mapy_core_store_api</model>
                 <title>Mapy Core Store Api</title>
@@ -226,16 +222,6 @@
                                                    
                 </methods>            	
             </mapy_core_store>        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
             <mapy_core_store_group translate="title" module="customer">
                 <model>mapy/mapy_core_store_group_api</model>
                 <title>Mapy Core Store Group Api</title>
@@ -281,13 +267,87 @@
                 </methods>            	
             </mapy_core_store_group>         
         
+			<mapy_cms_page translate="title" module="customer">
+                <model>mapy/mapy_cms_page_api</model>
+                <title>Mapy Cms Page Api</title>
+                <acl>mapy/cms_page</acl>
+                <methods>
+                
+                    <info translate="title" module="customer">
+                        <title>Get info about specific CMS page, by page id</title>
+                        <method>info</method>
+                        <acl>mapy/cms_page/info</acl>
+                    </info>
+                                    
+                    <update translate="title" module="customer">
+                        <title>Update specific CMS page</title>
+                        <method>update</method>
+                        <acl>mapy/cms_page/update</acl>
+                    </update>                                    
+                                     
+                                     
+                    <delete translate="title" module="customer">
+                        <title>Delete specific CMS page</title>
+                        <method>delete</method>
+                        <acl>mapy/cms_page/delete</acl>
+                    </delete>           
+                    
+                    <create translate="title" module="customer">
+                        <title>Create CMS page</title>
+                        <method>create</method>
+                        <acl>mapy/cms_page/create</acl>
+                    </create>                                                 
+                                     
+                    <getCollection translate="title" module="customer">
+                        <title>Get collection of all CMS pages</title>
+                        <method>getCollection</method>
+                        <acl>mapy/cms_page/getCollection</acl>
+                    </getCollection>                                     
+                                        
+                </methods>				
+			</mapy_cms_page>
         
-        
-        
-        
-        
-        
-        
+			<mapy_cms_block translate="title" module="customer">
+                <model>mapy/mapy_cms_block_api</model>
+                <title>Mapy Cms Block Api</title>
+                <acl>mapy/cms_block</acl>
+                <methods>
+                
+                    <info translate="title" module="customer">
+                        <title>Get info about specific CMS block, by block id</title>
+                        <method>info</method>
+                        <acl>mapy/cms_block/info</acl>
+                    </info>
+                                    
+                    <update translate="title" module="customer">
+                        <title>Update specific CMS block</title>
+                        <method>update</method>
+                        <acl>mapy/cms_block/update</acl>
+                    </update>                                    
+                                     
+                                     
+                    <delete translate="title" module="customer">
+                        <title>Delete specific CMS block</title>
+                        <method>delete</method>
+                        <acl>mapy/cms_block/delete</acl>
+                    </delete>       
+                    
+                    <create translate="title" module="customer">
+                        <title>Create CMS block</title>
+                        <method>create</method>
+                        <acl>mapy/cms_block/create</acl>
+                    </create>                        
+                    
+                                                   
+                                     
+                    <getCollection translate="title" module="customer">
+                        <title>Get collection of all CMS blocks</title>
+                        <method>getCollection</method>
+                        <acl>mapy/cms_block/getCollection</acl>
+                    </getCollection>                                     
+                                        
+                </methods>				
+			</mapy_cms_block>        
         
             <customer translate="title" module="customer">
                 <model>customer/customer_api</model>
@@ -387,9 +447,6 @@
         <acl>
             <resources>
 
-            
-            
-            
                 <mapy translate="title" module="customer">
                      <title>Mapy</title>
                      <sort_order>43</sort_order>
@@ -431,7 +488,6 @@
                          </log>
                      </core>
                      
-
                      <core_website translate="title" module="customer">
                          <title>Core Website</title>
                          <sort_order>110</sort_order>   
@@ -477,14 +533,8 @@
                          <update translate="title" module="customer">
 							<title>Update website</title>
                          </update>                          
-                         
                                            
                      </core_website>
-                     
-                     
-                     
-                     
-                     
                      
                      <core_store translate="title" module="customer">
                          <title>Core Store</title>
@@ -534,11 +584,7 @@
 							<title>Check isCanDelete</title>
                          </isCanDelete>                                                                  
                                                      
-                                                     
                      </core_store>                     
-                     
-                     
-
 
                      <core_store_group translate="title" module="customer">
                          <title>Core Store Group</title>
@@ -569,13 +615,61 @@
                          <isCanDelete translate="title" module="customer">
 							<title>Check isCanDelete</title>
                          </isCanDelete> 	                                      
-                         
-                                       
                                                                  
                      </core_store_group>                      
                      
+                     <cms_page translate="title" module="customer">
+                         <title>Mapy Cms Page Api</title>
+                         <sort_order>112</sort_order>   
+                                           
+                         <info translate="title" module="customer">
+							<title>Get info about specific CMS page, by page id</title>
+                         </info>  
+                         
+                         <update translate="title" module="customer">
+							<title>Update specific CMS page</title>
+                         </update>   
+                         
+                         <delete translate="title" module="customer">
+							<title>Delete specific CMS page</title>
+                         </delete> 
+                         
+                         <create translate="title" module="customer">
+							<title>Create CMS page</title>
+                         </create>                          
+                         
+                         <getCollection translate="title" module="customer">
+							<title>Get collection of all CMS pages</title>
+                         </getCollection>                          
+                                                                 
+                     </cms_page>  
                      
-                     
+                     <cms_block translate="title" module="customer">
+                         <title>Mapy Cms Block Api</title>
+                         <sort_order>112</sort_order>   
+                                           
+                         <info translate="title" module="customer">
+							<title>Get info about specific CMS block, by block id</title>
+                         </info>  
+                         
+                         <update translate="title" module="customer">
+							<title>Update specific CMS block</title>
+                         </update>   
+                         
+                         <delete translate="title" module="customer">
+							<title>Delete specific CMS block</title>
+                         </delete> 
+                         
+                         <create translate="title" module="customer">
+							<title>Create CMS block</title>
+                         </create>                          
+                         
+                         
+                         <getCollection translate="title" module="customer">
+							<title>Get collection of all CMS blocks</title>
+                         </getCollection>                          
+                                                                 
+                     </cms_block>                      
                      
                 </mapy>            
             

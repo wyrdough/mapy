@@ -51,7 +51,7 @@ class Ajzele_Mapy_Model_Mapy_Core_Store_Api extends Mage_Api_Model_Resource_Abst
 		}
     }		
 	
-	public function update($storeId, array $data) 
+	public function update($storeId, array $data)
 	{
 		$s = Mage::getModel('core/store')->load($storeId);
 		

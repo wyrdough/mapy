@@ -7,7 +7,7 @@
  */
 
 /**
- * Mapy Core Store Api
+ * Mapy Core Store Group Api
  * 
  * Sort of exposing or serving as API version of app/code/core/Mage/Core/Model/Store/Group.php file
  *
